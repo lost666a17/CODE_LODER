@@ -19,7 +19,7 @@ def shoing_codes():
 
 def shoing():
     # global data
-    os.system("cls")
+    os.system("clear")
     print(shoing_codes())
     print(f"{blue}======================================")
     with open(r"file.json", "r") as read_file:
@@ -38,7 +38,7 @@ def shoing():
         time.sleep("3")
 
 def Enter_new():
-    os.system("cls")
+    os.system("clear")
     print(shoing_codes())
     print(f"{blue}======================================")
     with open(r"file.json", "r") as read_file:
@@ -47,14 +47,14 @@ def Enter_new():
     print(f"{yellow}2: RANDOM CODE")
     ch = int(input("chose: "))
     if ch == 1:
-        os.system("cls")
+        os.system("clear")
         print(shoing_codes())
         print(f"{blue}======================================")
         new_code = int(input(f"{yellow}new code: "))
         new_user = input("new user: ")
         new_password = input("new password: ")
         new_text= input("Write a text for this code: ")
-        os.system("cls")
+        os.system("clear")
         print(f"your code is {new_code}")
         print(f"your user is {new_user}")
         print(f"your password is {new_password}")
@@ -72,7 +72,7 @@ def Enter_new():
             print("y or n , y is yes , n is no")
             
     elif ch == 2:
-        os.system("cls")
+        os.system("clear")
         print(shoing_codes())
         print(f"{blue}======================================")
         PSL = "123456789"
@@ -82,7 +82,7 @@ def Enter_new():
         new_user = input(f"{yellow}new user: ")
         new_password = input("new password: ")
         new_text = input("Write a text for this code: ")
-        os.system("cls")
+        os.system("clear")
         print(f"your code is {new_code}")
         print(f"your user is {new_user}")
         print(f"your password is {new_password}")
@@ -101,7 +101,7 @@ def Enter_new():
     else:
         print("1 or 2")
 def delete_code():
-    os.system("cls")
+    os.system("clear")
     print(shoing_codes())
     print(f"{blue}======================================")
     with open(r"file.json", "r") as read_file:
@@ -124,7 +124,7 @@ def delete_code():
 
 
 def starter():
-    os.system("cls")
+    os.system("clear")
     print(shoing_codes())
     print(f"{blue}======================================")
     print(f"{yellow}1: SHOING")
@@ -141,18 +141,3 @@ def starter():
         print("chose 1 or 2")
 while True:
     starter()
-
-
-
-# b = data
-# b["new_user"] = "Ali"
-# print(b)
-
-# new_user = input("new user: ")
-# new_password = input("new password: ")
-# new_data = {
-#     "user_name": new_user,
-#     "password": new_password
-# }
-# with open(r"D:\class python\تکلیف ها\جلسه 13\filee.json", "a") as write_file:
-#     json.dump(new_data, write_file)
